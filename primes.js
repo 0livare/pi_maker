@@ -3,33 +3,24 @@
  * This function will use the Nilakantha Series to calculate pi
  */
 function nilakPi(itr) {
-	var pi = math.bignumber(3);
+	var pi = 3;
 	var factor = 2;
 
 	for(var i=0; i<itr; ++i) {
-		var t1 = createNilakanthaTerm(factor);
+		pi += createNilakanthaTerm(factor);
 		factor += 2;
-		var t2 = createNilakanthaTerm(factor);
+		pi -= createNilakanthaTerm(factor);
         factor += 2;
-
-        console.log("t1 is " + t1.toString() + ", t2 is " + t2.toString());
-
-        pi = math.chain(pi)
-            .add(t1)
-            .subtract(t1)
-            .done();
 	}
 	return pi;
 }
 
 function createNilakanthaTerm(initialFactor) {
-    var dem = math.chain(initialFactor)
-        .multiply(++initialFactor)
-        .multiply(++initialFactor)
-        .bignumber()
-        .done();
+	var num = 4;
+	var dem = initialFactor * ++initialFactor * ++initialFactor;
 
-	return math.divide(4, dem);
+	var term = num / dem;
+	return term;
 }
 
 function fftPi(itr) {
