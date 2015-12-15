@@ -1,8 +1,8 @@
-
+var math = require('mathjs');
 /**
  * This function will use the Nilakantha Series to calculate pi
  */
-function nilakPi(itr) {
+module.exports.nilakPi = function(itr) {
 	var pi = 3;
 	var factor = 2;
 
@@ -27,7 +27,7 @@ function createNilakanthaTerm(initialFactor) {
  * Source:  http://stackoverflow.com/questions/19/what-is-the-fastest-way-to-get-the-value-of-%CF%80
  * @param itr
  */
-function fftPi(itr) {
+module.exports.fftPi = function(itr) {
     var k1 = math.number(545140134);
     var k2 = math.number(13591409);
     var k3 = math.number(640320);
