@@ -23,6 +23,10 @@ function createNilakanthaTerm(initialFactor) {
 	return term;
 }
 
+/**
+ * Source:  http://stackoverflow.com/questions/19/what-is-the-fastest-way-to-get-the-value-of-%CF%80
+ * @param itr
+ */
 function fftPi(itr) {
     var k1 = math.number(545140134);
     var k2 = math.number(13591409);
