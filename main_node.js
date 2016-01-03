@@ -3,7 +3,7 @@ var pi = require('./piMaker.js');
 var url = require('url');
 var script = require('./script.js');
 
-var port = 8080;
+var port = 9876;
 
 
 http.createServer(function (req, res) {
@@ -22,4 +22,4 @@ http.createServer(function (req, res) {
 
 }).listen(port);
 
-console.log('Server running at http://127.0.0.1:' + port);
+console.log('Server running at localhost:' + port);
