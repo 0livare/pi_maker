@@ -1,0 +1,25 @@
+{
+  "name": "pi_maker",
+  "version": "1.0.0",
+  "description": "A node server for generating pi via verious mathematical methods",
+  "main": "main_node.js",
+  "dependencies": {
+    "mathjs": "^2.5.0"
+  },
+  "devDependencies": {
+    "forever": "^0.15.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zposten/pi_maker.git"
+  },
+  "author": "Zach Posten",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zposten/pi_maker/issues"
+  },
+  "homepage": "https://github.com/zposten/pi_maker#readme"
+}
